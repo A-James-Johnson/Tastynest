@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { clearItem } from '../mockdata/cartSlice';
 import {useDispatch} from "react-redux";
-
+import baseurl from "./baseurl";
 const Login = () => {
   const [email, setemail] = useState('');
   const [password, setPassword] = useState('');
@@ -39,7 +39,7 @@ const Login = () => {
   }
 
   const login = () => {
-    fetch("http://localhost:5000/api/login", {
+    fetch(`${baseurl}/api/login`, {
       method: "POST",
       headers: {
         "Content-type": "application/json"
