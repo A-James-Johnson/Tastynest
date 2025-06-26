@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { clearItem } from '../mockdata/cartSlice';
 import {useDispatch} from "react-redux";
-import baseurl from "./baseurl";
+import baseURL from "./baseURL";
 
 
 
@@ -42,7 +42,7 @@ const Signup = () => {
     
     const signup=()=>{
         console.log("signup is ")
-         fetch(`${baseurl}/api/register`, {
+         fetch(`${baseURL}/api/register`, {
         method: "POST",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify({ username, email, password }),
