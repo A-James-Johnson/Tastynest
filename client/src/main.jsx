@@ -13,7 +13,7 @@ import Cart from "./components/Cart";
 import Signup from "./components/Signup";
 import Profile from "./components/Profile";
 
-const About = lazy(() => import("./components/ABout"))
+const About = lazy(() => import("./components/About"))
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const approuter = createBrowserRouter([
