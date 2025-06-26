@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 import appStore from "./mockdata/appStore";
 
 import Header from "./components/header";
-import Footer from "./components/Footer";
+import Footer from "./components/footer";
 
 function App() {
   const { pathname } = useLocation();
