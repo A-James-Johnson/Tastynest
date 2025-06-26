@@ -4,7 +4,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import { Provider } from "react-redux";
 import appStore from "./mockdata/appStore";
 
-import Header from "./components/Header";
+import Header from "./components/header";
 import Footer from "./components/Footer";
 
 function App() {
